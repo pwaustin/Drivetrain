@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">Drivetrain</string>
+
+    <!--Back4app server-->
+    <string name="back4app_app_id">1vLyRtbuQgBpwe3MgWAUSt2kLT95dMRsUDh06pGR</string>
+    <string name="back4app_client_key">j5CVVMef6bKwBG1YY68U8oHYbo5Zhif1sdBI2FRL</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!--Login Activity-->
+    <string name="str_login_username">Username</string>
+    <string name="str_login_password">Password</string>
+    <string name="str_login_login">Login</string>
+    <string name="str_login_newhere">New here?  Register!</string>
+    <string name="str_login_signup">Sign Up</string>
+    <string name="str_login_title">Drivetrain</string>
+
+    <!--SignUp Activity-->
+    <string name="str_signup_back">Back</string>
+    <string name="str_signup_username">Username</string>
+    <string name="str_signup_password">Password</string>
+    <string name="str_signup_password_again">Password Again</string>
+    <string name="str_signup_sign_up">Sign Up</string>
+
+    <!--Logout Activity-->
+    <string name="str_log_out_from_drivetrain">Log out from Drivetrain?</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_signup_title">Sign Up</string>
+    <string name="str_logout_title">Log Out</string>
+
+    <!--Home Activity-->
+    <string name="str_home_query">Query</string>
+    <string name="str_home_query_history">Query History</string>
+    <string name="str_home_about">About</string>
+    <string name="str_home_logout">Logout</string>
+    <string name="str_home_title">Drivetrain</string>
+    <string name="str_home_tutorial">Tutorial</string>
+
+    <!--Query Activity-->
+    <string name="str_drive_type">Drive Type</string>
+    <string name="str_vehicle_type">Vehicle Type</string>
+    <string name="str_make">Make</string>
+    <string name="str_query_title">Query</string>
+    <string name="str_query_gender">Gender</string>
+    <string name="str_query_title_of_respect">Title of Respect</string>
+    <string name="str_query_age">Age</string>
+    <string name="str_query_ethnicity">Ethnicity</string>
+    <string name="str_query_marital_status">Marital Status</string>
+    <string name="str_query_children">Number of Children</string>
+    <string name="str_query_income">Income</string>
+    <string name="str_query_education">Education</string>
+    <string name="str_query_dwelling">Dwelling Type</string>
+    <string name="str_query_homeowner">Homeowner or Renter</string>
+    <string name="str_query_home_year_built">Home Year Built</string>
+    <string name="str_query_area_code">Area Code</string>
+    <string name="str_query_button">Query</string>
+
+    <string name="str_about_title">About</string>
+    <string name="str_history_title">Query History</string>
+    <string name="str_clear_history">Clear History</string>
+    <string name="str_results_title">Results</string>
+    <string name="str_login_home">home</string>
+    <string name="str_tutorial_title">Tutorial</string>
+    <string name="str_vehicle_attributes">Vehicle Attributes</string>
+    <string name="str_person_attributes">Person Attributes</string>
+
+    <!--String arrays for spinners-->
+    <string-array name="gender_array">
+        <item> </item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+        <string-array name="drive_type_array">
+        <item> </item>
+        <item>FWD</item>
+        <item>RWD</item>
+        <item>AWD</item>
+        <item>4WD</item>
+        <item>4x4</item>
+        <item>4x2</item>
+    </string-array>
+    <string-array name="vehicle_type_array">
+        <item> </item>
+        <item>CAR</item>
+        <item>SUV</item>
+        <item>TRUCK</item>
+        <item>VAN</item>
+    </string-array>
+    <string-array name="make_array">
+        <item> </item>
+        <item>AUDI</item>
+        <item>BMW</item>
+        <item>CADILLAC</item>
+        <item>CHEVROLET</item>
+        <item>CHRYSLER</item>
+        <item>DAEWOO</item>
+        <item>DATSUN</item>
+        <item>DODGE</item>
+        <item>EAGLE</item>
+        <item>FORD</item>
+        <item>GEO</item>
+        <item>GMC</item>
+        <item>HONDA</item>
+        <item>HUMMER</item>
+        <item>HYUNDAI</item>
+        <item>INFINITI</item>
+        <item>ISUZU</item>
+        <item>JAGUAR</item>
+        <item>JEEP</item>
+        <item>KIA</item>
+        <item>LAMBORGHINI</item>
+        <item>LAND ROVER</item>
+        <item>LEXUS</item>
+        <item>LINCOLN</item>
+        <item>MAZDA</item>
+        <item>MERCEDES-BENZ</item>
+        <item>MERCURY</item>
+        <item>MINI</item>
+        <item>MITSUBISHI</item>
+        <item>NISSAN</item>
+        <item>OLDSMOBILE</item>
+        <item>PLYMOUTH</item>
+        <item>PONTIAC</item>
+        <item>PORSCHE</item>
+        <item>RAM</item>
+        <item>SAAB</item>
+        <item>SATURN</item>
+        <item>SCION</item>
+        <item>SMART</item>
+        <item>SUBARU</item>
+        <item>SUZUKI</item>
+        <item>TOYOTA</item>
+        <item>VOLKSWAGEN</item>
+        <item>VOLVO</item>
+    </string-array>
+    <string-array name="title_array">
+        <item> </item>
+        <item>MR</item>
+        <item>MS</item>
+        <item>MRS</item>
+        <item>DR</item>
+        <item>REV</item>
+        <item>RABI</item>
+    </string-array>
+    <string-array name="ethnicity_array">
+        <item> </item>
+        <item>Western European</item>
+        <item>Hispanic</item>
+        <item>African American</item>
+        <item>South Asian</item>
+        <item>Central Asian</item>
+        <item>Southeast Asian</item>
+        <item>East Asian</item>
+        <item>Mediterranean</item>
+        <item>Native American</item>
+        <item>Scandinavian</item>
+        <item>Polynesian</item>
+        <item>Middle Eastern</item>
+        <item>Jewish</item>
+        <item>Eastern European</item>
+        <item>Caribbean</item>
+    </string-array>
+    <string-array name="marital_status_array">
+        <item> </item>
+        <item>Extremely Likely Married</item>
+        <item>Likely Married</item>
+        <item>Single</item>
+    </string-array>
+    <string-array name="number_of_children_array">
+        <item> </item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="dwelling_type_array">
+        <item> </item>
+        <item>Apartment (w/ Number)</item>
+        <item>Apartment (w/o Number)</item>
+        <item>House</item>
+        <item>P.O. Box</item>
+    </string-array>
+    <string-array name="homeowner_renter_array">
+        <item> </item>
+        <item>Probable Homeowner 70-79%</item>
+        <item>Probable Homeowner 80-89%</item>
+        <item>Probable Homeowner 90-100%</item>
+        <item>Homeowner</item>
+        <item>Probable Renter</item>
+        <item>Renter</item>
+    </string-array>
+    <string-array name="relationship_array">
+        <item>Single</item>
+        <item>Married</item>
+    </string-array>
+    <string-array name="age_array">
+        <item>Under 20</item>
+        <item>21-30</item>
+        <item>31-40</item>
+        <item>41-50</item>
+        <item>51-60</item>
+        <item>61-70</item>
+        <item>71-80</item>
+        <item>Over 80</item>
+    </string-array>
+    <string-array name="children_array">
+        <item> </item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7+</item>
+    </string-array>
+    <string-array name="education_array">
+        <item> </item>
+        <item>Some High School</item>
+        <item>High School</item>
+        <item>Some College</item>
+        <item>Bachelor Degree</item>
+        <item>Graduate Degree</item>
+        <item>Some High School Likely</item>
+        <item>High School Likely</item>
+        <item>Some College Likely</item>
+        <item>Bachelor Degree Likely</item>
+        <item>Graduate Degree Likely</item>
+    </string-array>
+</resources>

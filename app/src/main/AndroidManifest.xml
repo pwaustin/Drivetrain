@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.milec.drivetrain_new">
+
+    <!-- Connect to internet -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/str_login_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/str_signup_title"
+            android:parentActivityName=".LoginActivity"/>
+        <activity
+            android:name=".LogoutActivity"
+            android:label="@string/str_logout_title"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/str_home_title" />
+        <activity
+            android:name=".QueryActivity"
+            android:label="@string/str_query_title"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ResultsActivity"
+            android:label="@string/str_results_title"
+            android:parentActivityName=".QueryActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/str_about_title"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".HistoryActivity"
+            android:label="@string/str_history_title"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".TutorialActivity"
+            android:label="@string/str_tutorial_title"
+            android:parentActivityName=".HomeActivity"/>
+
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="@string/back4app_server_url" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/back4app_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/back4app_client_key" />
+
+
+    </application>
+
+</manifest>

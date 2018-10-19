@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.milec.drivetrain_new.HomeActivity"
+    android:background="@drawable/background"
+    android:weightSum="4">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="launchQueryActivity"
+            android:text="@string/str_home_query"
+            android:textColor="#ffffff"
+            android:background="@drawable/mybutton"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/query_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_home_query_history"
+            android:textColor="#ffffff"
+            android:background="@drawable/mybutton"
+            android:layout_margin="10dp"
+            android:onClick="launchHistoryActivity"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_home_about"
+            android:onClick="launchAboutActivity"
+            android:textColor="#ffffff"
+            android:background="@drawable/mybutton"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/tutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_home_tutorial"
+            android:onClick="launchTutorialActivity"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/mybutton"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_home_logout"
+            android:onClick="launchLogoutActivity"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/mybutton"
+            android:layout_margin="10dp"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

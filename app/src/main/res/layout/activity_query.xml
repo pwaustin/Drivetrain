@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.mile.drivetrain.MainActivity"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/str_vehicle_attributes"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:background="@color/Black"
+            android:textColor="@color/White"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_silver"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/drive_type"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/str_drive_type"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/drive_type_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_blue"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/vehicle_type"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/str_vehicle_type"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/vehicle_type_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_silver"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/make"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/str_make"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/make_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/str_person_attributes"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:background="@color/Black"
+            android:textColor="@color/White"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_blue"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/str_query_gender"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/gender_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_silver"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/str_query_title_of_respect"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/title_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_blue"
+            android:weightSum="4"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_query_age"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/age_text"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="2"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:textColor="@color/White"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_silver"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/ethnicity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_query_ethnicity"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/ethnicity_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_blue"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/marital_status"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_query_marital_status"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/marital_status_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_silver"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/number_of_children"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_query_children"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/number_of_children_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_blue"
+            android:weightSum="4"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:id="@+id/income"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_query_income"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/income_text"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="6"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_silver"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/education"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_query_education"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/education_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_blue"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/dwelling_type"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_query_dwelling"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/dwelling_type_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_silver"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/homeowner_renter"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_query_homeowner"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/homeowner_renter_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_blue"
+            android:weightSum="4"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:id="@+id/home_year_built"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_query_home_year_built"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/home_year_built_text"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="4"
+                android:inputType="number"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/unr_silver"
+            android:weightSum="4"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:id="@+id/area_code"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_query_area_code"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/area_code_text"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:textColor="@color/White"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="3"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/query_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_query_button"
+            android:textColor="#ffffff"
+            android:background="@drawable/mybutton"
+            android:layout_margin="20dp"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
